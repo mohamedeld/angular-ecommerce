@@ -4,9 +4,7 @@ export const routes: Routes = [
   {
     path: 'public',
     loadChildren: () =>
-      import('./public/public-routing.module').then(
-        (m) => m.PublicRoutingModule
-      ),
+      import('./public/public-routing').then((m) => m.PublicRoutes),
   },
   {
     path: '',

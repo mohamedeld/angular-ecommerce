@@ -4,7 +4,7 @@ import { PublicComponent } from './public.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 
-const routes: Routes = [
+export const PublicRoutes: Routes = [
   {
     path: '',
     component: PublicComponent,
@@ -25,9 +25,3 @@ const routes: Routes = [
     ],
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-})
-export class PublicRoutingModule {}
